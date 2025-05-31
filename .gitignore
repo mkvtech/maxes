@@ -1,0 +1,15 @@
+__pycache__
+/data
+/venv
+.DS_store
+
+/output
+!/output/logs/notebooks/.keep
+
+maxes.bundle
+
+/config.local.yml
+
+# generated python code
+src/maxes/notebooks/load_files.py
+src/maxes/notebooks/load_files.json

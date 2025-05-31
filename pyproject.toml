@@ -1,0 +1,15 @@
+[project]
+name = "maxes"
+version = "9999.0.0"
+description = "Max's XES utilities library"
+dependencies = [
+    "numpy",
+    "pandas",
+    "networkx[default]",
+]
+requires-python = ">=3.9"
+classifiers = ["Private :: Do not Upload"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

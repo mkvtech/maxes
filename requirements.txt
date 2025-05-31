@@ -1,0 +1,36 @@
+# Trees
+ete3
+
+# Graphs
+networkx
+
+# Data science
+numpy
+matplotlib
+pandas
+scikit-learn
+
+# Algorithms
+levenshtein
+
+# XML schema validation
+xmlschema
+
+# Python Notebooks
+ipykernel
+ipympl
+
+# Progress bar
+tqdm
+
+# Configuration
+pyyaml
+
+# Templates
+jinja2
+
+# XES, process mining
+pm4py
+
+# GUI
+pyside6

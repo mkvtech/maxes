@@ -1,0 +1,507 @@
+{
+  "sources": [
+    {
+      "key": "photo_copier",
+      "title": "Artificial Digital Photo Copier Event Log",
+      "pageUrl": "https://data.4tu.nl/datasets/c8ae67a9-13de-445b-8086-2655afc0c1db",
+
+      "files": [
+        {
+          "key": "data",
+          "url": "https://data.4tu.nl/file/c8ae67a9-13de-445b-8086-2655afc0c1db/87aa13ed-6ebc-46b5-8b1e-b13fd0d23f69",
+          "destination": "event-log.xes.gz"
+        }
+      ],
+
+      "process": [
+        {
+          "step": "gzip",
+          "source": "event-log.xes.gz",
+          "destination": "event-log.xes"
+        }
+      ],
+
+      "result_files": [
+        {
+          "key": "event_log",
+          "path": "event-log.xes"
+        }
+      ]
+    },
+
+    {
+      "key": "synthetic_with_performance_characteristics",
+      "title": "Synthetic event log with specific process performance characteristics",
+      "pageUrl": "",
+
+      "files": [
+        {
+          "key": "event_log",
+          "url": "https://data.4tu.nl/file/670bf51b-cb96-4c80-9c20-caff31b2f568/3fe0c66f-2d18-4f48-81ab-6efba707973f",
+          "destination": "event_log.xes"
+        },
+        {
+          "key": "event_log_lifecycle_moves",
+          "url": "https://data.4tu.nl/file/670bf51b-cb96-4c80-9c20-caff31b2f568/bbcb2ba0-4e61-4120-a0ff-d72f8a7a9cd3",
+          "destination": "event_log_lifecycle_moves.xes"
+        }
+      ],
+
+      "result_files": [
+        {
+          "key": "event_log",
+          "destination": "event_log.xes"
+        },
+        {
+          "key": "event_log_lifecycle_moves",
+          "destination": "event_log_lifecycle_moves.xes"
+        }
+      ]
+    },
+
+    {
+      "key": "pdc2023",
+      "title": "Process Discovery Contest 2023",
+      "pageUrl": "https://data.4tu.nl/datasets/afd6f608-469e-48f9-977d-875b45840d39/1",
+
+      "files": [
+        {
+          "key": "base_logs",
+          "url": "https://data.4tu.nl/file/afd6f608-469e-48f9-977d-875b45840d39/17cf3540-27b9-4525-a5e8-626de4faa627",
+          "destination": "base_logs.zip"
+        },
+
+        {
+          "key": "ground_truth_logs",
+          "url": "https://data.4tu.nl/file/afd6f608-469e-48f9-977d-875b45840d39/0e3065bd-5e8d-48f7-8548-b490d3ef80bb",
+          "destination": "ground_truth_logs.zip"
+        },
+
+        {
+          "key": "models",
+          "url": "https://data.4tu.nl/file/afd6f608-469e-48f9-977d-875b45840d39/e8eaeb15-b503-443c-8666-43f3c5261eb2",
+          "destination": "models.zip"
+        },
+
+        {
+          "key": "test_logs",
+          "url": "https://data.4tu.nl/file/afd6f608-469e-48f9-977d-875b45840d39/de946a9a-727e-4eed-b0e5-0ca2393d54aa",
+          "destination": "test_logs.zip"
+        },
+
+        {
+          "key": "training_logs",
+          "url": "https://data.4tu.nl/file/afd6f608-469e-48f9-977d-875b45840d39/acbc2e6d-6182-4a3a-84b5-282a28022228",
+          "destination": "training_logs.zip"
+        }
+      ],
+
+      "process": [
+        {
+          "step": "zip",
+          "source": "base_logs.zip",
+          "destination": "base_logs"
+        },
+        {
+          "step": "zip",
+          "source": "ground_truth_logs.zip",
+          "destination": "ground_truth_logs"
+        },
+        {
+          "step": "zip",
+          "source": "models.zip",
+          "destination": "models"
+        },
+        {
+          "step": "zip",
+          "source": "test_logs.zip",
+          "destination": "test_logs"
+        },
+        {
+          "step": "zip",
+          "source": "training_logs.zip",
+          "destination": "training_logs"
+        }
+      ]
+    },
+
+    {
+      "key": "env_permit_application_process",
+      "title": "Receipt phase of an environmental permit application process (WABO), CoSeLoG project",
+      "pageUrl": "https://data.4tu.nl/datasets/2db2e3c1-9499-4699-9098-1a28c15a5913/2",
+
+      "files": [
+        {
+          "key": "event_log",
+          "url": "https://data.4tu.nl/file/2db2e3c1-9499-4699-9098-1a28c15a5913/21758246-61e7-4019-bf7d-fb6a9b38df14",
+          "destination": "event_log.xes.gz"
+        }
+      ],
+
+      "process": [
+        {
+          "step": "gzip",
+          "source": "event_log.xes.gz",
+          "destination": "event_log.xes"
+        }
+      ],
+
+      "result_files": [
+        {
+          "key": "data",
+          "path": "event_log.xes"
+        }
+      ]
+    },
+
+    {
+      "key": "job_shop_scheduling",
+      "title": "An agent-based process mining architecture for emergent behavior analysis",
+      "pageUrl": "https://data.4tu.nl/datasets/29fee175-d665-4412-b3c8-d7e553ea1b73/2",
+
+      "files": [
+        {
+          "key": "filtered_files",
+          "url": "https://data.4tu.nl/file/29fee175-d665-4412-b3c8-d7e553ea1b73/c97251ff-7da3-4936-8933-72fb223b5473",
+          "destination": "filtered_files.zip"
+        }
+      ],
+
+      "process": [
+        {
+          "step": "zip",
+          "source": "filtered_files.zip",
+          "destination": "filtered_files"
+        }
+      ],
+
+      "result_files": [
+        { "key": "log_411", "path": "filtered_files/411.xes" },
+        { "key": "log_412", "path": "filtered_files/412.xes" },
+        { "key": "log_413", "path": "filtered_files/413.xes" },
+        { "key": "log_421", "path": "filtered_files/421.xes" },
+        { "key": "log_422", "path": "filtered_files/422.xes" },
+        { "key": "log_423", "path": "filtered_files/423.xes" },
+        { "key": "log_431", "path": "filtered_files/431.xes" },
+        { "key": "log_432", "path": "filtered_files/432.xes" },
+        { "key": "log_433", "path": "filtered_files/433.xes" },
+        { "key": "log_511", "path": "filtered_files/511.xes" },
+        { "key": "log_512", "path": "filtered_files/512.xes" },
+        { "key": "log_513", "path": "filtered_files/513.xes" },
+        { "key": "log_521", "path": "filtered_files/521.xes" },
+        { "key": "log_522", "path": "filtered_files/522.xes" },
+        { "key": "log_523", "path": "filtered_files/523.xes" },
+        { "key": "log_531", "path": "filtered_files/531.xes" },
+        { "key": "log_532", "path": "filtered_files/532.xes" },
+        { "key": "log_533", "path": "filtered_files/533.xes" },
+        { "key": "log_611", "path": "filtered_files/611.xes" },
+        { "key": "log_612", "path": "filtered_files/612.xes" },
+        { "key": "log_613", "path": "filtered_files/613.xes" },
+        { "key": "log_621", "path": "filtered_files/621.xes" },
+        { "key": "log_622", "path": "filtered_files/622.xes" },
+        { "key": "log_623", "path": "filtered_files/623.xes" },
+        { "key": "log_631", "path": "filtered_files/631.xes" },
+        { "key": "log_632", "path": "filtered_files/632.xes" },
+        { "key": "log_633", "path": "filtered_files/633.xes" }
+      ]
+    },
+
+    {
+      "key": "lawsuits_brazil",
+      "title": "",
+      "description": "Event log containing business 4,795 lawsuits distributed between January 1, 2018 and July 21, 2020 from the Court of Justice of the State of Sao Paulo, Brazil.",
+      "pageUrl": "https://data.4tu.nl/datasets/d5076a17-6d14-4c23-9ff9-23c43659cb83/1",
+
+      "files": [
+        {
+          "key": "event_log",
+          "url": "https://data.4tu.nl/file/d5076a17-6d14-4c23-9ff9-23c43659cb83/38c90eeb-7a1d-4789-a4fe-308410ea7302",
+          "destination": "TJSP-BL-event-log.csv"
+        }
+      ],
+
+      "result_files": [
+        {
+          "key": "event_log",
+          "path": "TJSP-BL-event-log.csv"
+        }
+      ]
+    },
+
+    {
+      "key": "bpic2020",
+      "title": "BPI Challenge 2020",
+      "pageUrl": "https://data.4tu.nl/collections/6bcb71ec-6e2e-4837-a899-624367f1c36b",
+
+      "files": [
+        {
+          "key": "request_for_payment",
+          "url": "https://data.4tu.nl/file/a6f651a7-5ce0-4bc6-8be1-a7747effa1cc/7b1f2e56-e4a8-43ee-9a09-6e64f45a1a98",
+          "destination": "request_for_payment.xes.gz"
+        },
+        {
+          "key": "domestic_declarations",
+          "url": "https://data.4tu.nl/file/6a0a26d2-82d0-4018-b1cd-89afb0e8627f/6eeb0328-f991-48c7-95f2-35033504036e",
+          "destination": "domestic_declarations.xes.gz"
+        },
+        {
+          "key": "international_declarations",
+          "url": "https://data.4tu.nl/file/91fd1fa8-4df4-4b1a-9a3f-0116c412378f/d45ee7dc-952c-4885-b950-4579a91ef426",
+          "destination": "international_declarations.xes.gz"
+        },
+        {
+          "key": "permit_log",
+          "url": "https://data.4tu.nl/file/db35afac-2133-40f3-a565-2dc77a9329a3/12b48cc1-18a8-4089-ae01-7078fc5e8f90",
+          "destination": "permit_log.xes.gz"
+        },
+        {
+          "key": "prepaid_travel_cost",
+          "url": "https://data.4tu.nl/file/fb84cf2d-166f-4de2-87be-62ee317077e5/612068f6-14d0-4a82-b118-1b51db52e73a",
+          "destination": "prepaid_travel_cost.xes.gz"
+        }
+      ],
+
+      "process": [
+        {
+          "step": "gzip",
+          "source": "request_for_payment.xes.gz",
+          "destination": "request_for_payment.xes"
+        },
+        {
+          "step": "gzip",
+          "source": "domestic_declarations.xes.gz",
+          "destination": "domestic_declarations.xes"
+        },
+        {
+          "step": "gzip",
+          "source": "international_declarations.xes.gz",
+          "destination": "international_declarations.xes"
+        },
+        {
+          "step": "gzip",
+          "source": "permit_log.xes.gz",
+          "destination": "permit_log.xes"
+        },
+        {
+          "step": "gzip",
+          "source": "prepaid_travel_cost.xes.gz",
+          "destination": "prepaid_travel_cost.xes"
+        }
+      ],
+
+      "result_files": [
+        {
+          "key": "request_for_payment",
+          "path": "request_for_payment.xes"
+        },
+        {
+          "key": "domestic_declarations",
+          "path": "domestic_declarations.xes"
+        },
+        {
+          "key": "international_declarations",
+          "path": "international_declarations.xes"
+        },
+        {
+          "key": "permit_log",
+          "path": "permit_log.xes"
+        },
+        {
+          "key": "prepaid_travel_cost",
+          "path": "prepaid_travel_cost.xes"
+        }
+      ]
+    },
+
+    {
+      "key": "ccc19",
+      "title": "Conformance Checking Challenge 2019 (CCC19)",
+      "pageUrl": "https://data.4tu.nl/datasets/cb2975c2-96c5-4616-97a4-f0f88abef14e/1",
+
+      "files": [
+        {
+          "key": "data",
+          "url": "https://data.4tu.nl/file/cb2975c2-96c5-4616-97a4-f0f88abef14e/7866ef2e-a8ad-461b-aaa5-4533c1856a32",
+          "destination": "data.zip"
+        }
+      ],
+
+      "process": [
+        {
+          "step": "zip",
+          "source": "data.zip",
+          "destination": "data"
+        }
+      ],
+
+      "result_files": [{ "key": "data", "path": "data/CCC19 - Log XES.xes" }]
+    },
+
+    {
+      "key": "software_data_analytics",
+      "title": "Experimental data for \"Software Data Analytics: Architectural Model Discovery and Design Pattern Detection\"",
+      "pageUrl": "https://data.4tu.nl/datasets/a1d2ad46-7e37-476b-9c5f-082db6ee112a/1",
+
+      "files": [
+        {
+          "key": "data",
+          "url": "https://data.4tu.nl/file/a1d2ad46-7e37-476b-9c5f-082db6ee112a/58e54a9d-9962-47c9-bbb1-8f492e0a1417",
+          "destination": "data.zip"
+        }
+      ],
+
+      "process": [
+        {
+          "step": "zip",
+          "source": "data.zip",
+          "destination": "data"
+        },
+
+        {
+          "step": "gzip",
+          "source": "data/PhD Thesis Execution Data/JGraphx 3.5.1/CleanJGraphx1EventLog.xes.gz",
+          "destination": "data/PhD Thesis Execution Data/JGraphx 3.5.1/CleanJGraphx1EventLog.xes"
+        },
+
+        {
+          "step": "gzip",
+          "source": "data/PhD Thesis Execution Data/JHotDraw 5.1/CleanSoftwareEventLogJhotdraw.xes.gz",
+          "destination": "data/PhD Thesis Execution Data/JHotDraw 5.1/CleanSoftwareEventLogJhotdraw.xes"
+        },
+
+        {
+          "step": "gzip",
+          "source": "data/PhD Thesis Execution Data/Junit 3.7/JUnit3.7Transforemd1Trace.xes.gz",
+          "destination": "data/PhD Thesis Execution Data/Junit 3.7/JUnit3.7Transforemd1Trace.xes"
+        },
+
+        {
+          "step": "gzip",
+          "source": "data/PhD Thesis Execution Data/Lexi 0.1.1/1Trace.xes.gz",
+          "destination": "data/PhD Thesis Execution Data/Lexi 0.1.1/1Trace.xes"
+        },
+
+        {
+          "step": "gzip",
+          "source": "data/PhD Thesis Execution Data/Lexi 0.1.1/CleanedTransformed4Runs--Lexi.xes.gz",
+          "destination": "data/PhD Thesis Execution Data/Lexi 0.1.1/CleanedTransformed4Runs--Lexi.xes"
+        }
+      ],
+
+      "result_files": [
+        // 3 case studies
+        {
+          "key": "alarm_system",
+          "path": "data/PhD Thesis Execution Data/3 Case studies/AlarmSystem Case Study/5ScenarioRun.xes"
+        },
+
+        //
+
+        {
+          "key": "book_store_2",
+          "path": "data/PhD Thesis Execution Data/3 Case studies/bookstore case [source+data+component config]/bookstorelog2case.xes"
+        },
+        {
+          "key": "book_store_20",
+          "path": "data/PhD Thesis Execution Data/3 Case studies/bookstore case [source+data+component config]/bookstorelog20Cases.xes"
+        },
+
+        //
+
+        {
+          "key": "sports_news_commentary",
+          "path": "data/PhD Thesis Execution Data/3 Case studies/Commentary example/10traces.xes"
+        },
+
+        // Design pattern detection
+        {
+          "key": "design_patterns__observer__pattern1",
+          "path": "data/PhD Thesis Execution Data/Design pattern detection/source+data/+pattern1---Observer/1TraceSimple800.xes"
+        },
+        {
+          "key": "design_patterns__state__remote_control_software",
+          "path": "data/PhD Thesis Execution Data/Design pattern detection/source+data/remote control software--state/1trace.xes"
+        },
+        {
+          "key": "design_patterns__observer__sensing_alarm_system",
+          "path": "data/PhD Thesis Execution Data/Design pattern detection/source+data/Sensing Alarm system---Observer/3cases.xes"
+        },
+        {
+          "key": "design_patterns__observer__short_message_subscribe",
+          "path": "data/PhD Thesis Execution Data/Design pattern detection/source+data/short message subscribe---observer/5cases.xes"
+        },
+        {
+          "key": "design_patterns__state__pattern1",
+          "path": "data/PhD Thesis Execution Data/Design pattern detection/source+data/state/1trace.xes"
+        },
+        {
+          "key": "design_patterns__strategy__test_software",
+          "path": "data/PhD Thesis Execution Data/Design pattern detection/source+data/testStateStrategy software-state/1trace.xes"
+        },
+
+        //
+
+        {
+          "key": "jgraphx",
+          "path": "data/PhD Thesis Execution Data/JGraphx 3.5.1/CleanJGraphx1EventLog.xes"
+        },
+
+        {
+          "key": "jhotdraw",
+          "path": "data/PhD Thesis Execution Data/JHotDraw 5.1/CleanSoftwareEventLogJhotdraw.xes"
+        },
+
+        {
+          "key": "junit",
+          "path": "data/PhD Thesis Execution Data/Junit 3.7/JUnit3.7Transforemd1Trace.xes"
+        },
+
+        {
+          "key": "lexi",
+          "path": "data/PhD Thesis Execution Data/Lexi 0.1.1/1Trace.xes"
+        },
+
+        {
+          "key": "lexi_transformed",
+          "path": "data/PhD Thesis Execution Data/Lexi 0.1.1/CleanedTransformed4Runs--Lexi.xes"
+        },
+
+        //
+
+        {
+          "key": "mailing_server__observer_pattern",
+          "path": "data/PhD Thesis Execution Data/Running Example---MailingServer_ObserverPattern/3cases.xes"
+        }
+      ]
+    }
+
+    // {
+    //     "key": "template",
+    //     "title": "",
+    //     "pageUrl": "",
+
+    //     "files": [
+    //         {
+    //             "key": "",
+    //             "url": "",
+    //             "destination": ""
+    //         },
+    //     ],
+
+    //     "process": [
+    //         {
+    //             "step": "zip",
+    //             "source": "base_logs.zip",
+    //             "destination": "base_logs"
+    //         },
+    //     ],
+
+    //     "result_files": [
+    //         {
+    //             "key": "data",
+    //             "path": "event_log.xes"
+    //         },
+    //     ]
+    // },
+  ]
+}

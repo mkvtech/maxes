@@ -1,0 +1,31 @@
+import typing
+import maxes.notebooks.utils
+from maxes.xes_loader2 import XesLoader, XesLog
+
+# This file is generated automatically
+
+class XesLogsPathes(typing.NamedTuple):
+{% for file_key in load_files.keys() %}
+    {{ file_key }}: str
+{% endfor %}
+
+def get_pathes():
+    return XesLogsPathes(
+    {% for file_key, file_path in load_files.items() %}
+        {{ file_key }}=_get_data_file_path("{{ file_path }}"),
+    {% endfor %}
+    )
+
+def get_pathes_dict():
+    return {
+    {% for file_key, file_path in load_files.items() %}
+    "{{ file_key }}": "{{ file_path }}",
+    {% endfor %}
+    }
+
+{% for file_key in load_files.keys() %}
+def load_{{ file_key }}(): return XesLoader().load(get_pathes().{{ file_key }})
+{% endfor %}
+
+def _get_data_file_path(path) -> str:
+    return maxes.notebooks.utils.get_data_path(path)
